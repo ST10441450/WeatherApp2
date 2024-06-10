@@ -27,6 +27,8 @@ The development of the Weather App involved several stages:
     - **API Integration:** Integrated with reliable weather APIs (e.g., OpenWeatherMap) to fetch real-time weather data.
 4. **Testing:** Conducted extensive testing including unit tests, integration tests, and user acceptance testing to ensure the app’s reliability and performance.
 5. **Deployment:** Deployed the app on Google Play Store and Apple App Store.
+   ![Screenshot 2024-06-10 154549](https://github.com/ST10441450/WeatherApp/assets/160849581/c865c9ea-cd39-4247-8335-42b4c210db8a)
+
 
 #### Technical Specifications
 - **Programming Languages:** JavaScript, HTML, CSS
