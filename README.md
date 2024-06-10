@@ -1,5 +1,5 @@
 # WeatherApp
-Developer: Sinethemba Gwabeni
+Developer: Sinethemba Gwabeni.
 Student Number:ST10441450
 
 ### Weather App Report
