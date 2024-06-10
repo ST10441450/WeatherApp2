@@ -44,6 +44,7 @@ The user interface of the Weather App is designed with simplicity and functional
 - **Forecast Screen:** Shows daily and weekly weather forecasts in a visually appealing format.
 - **Search Bar:** Allows users to quickly search for weather information in different locations.
 - **Settings:** Provides options to customize the app according to user preferences.
+   ![Screenshot_20240610_150422](https://github.com/ST10441450/WeatherApp/assets/160849581/67d62d8f-2ae2-4bfb-8ce9-c3a1530e4847)
 
 #### Testing Procedures
 The app underwent a rigorous testing phase to ensure quality and performance:
