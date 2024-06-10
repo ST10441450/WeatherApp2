@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FFFFFF"
+    android:paddingTop="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/tvFri"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="17dp"
+        android:text="Friday"
+        app:layout_constraintEnd_toStartOf="@+id/friIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThurs" />
+
+    <TextView
+        android:id="@+id/tvThurs"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="72dp"
+        android:text="Thursday"
+        app:layout_constraintBottom_toTopOf="@+id/tvFri"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="62dp"
+        android:text="Saturday"
+        app:layout_constraintBottom_toTopOf="@+id/tvSun"
+        app:layout_constraintEnd_toStartOf="@+id/satIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="56dp"
+        android:text="Tuesday"
+        android:textColor="#0E0D0D"
+        app:layout_constraintBottom_toTopOf="@+id/tvWed"
+        app:layout_constraintEnd_toStartOf="@+id/tuesIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="64dp"
+        android:text="Sunday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sunIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="76dp"
+        android:text="Wednesday"
+        app:layout_constraintBottom_toTopOf="@+id/tvThurs"
+        app:layout_constraintEnd_toStartOf="@+id/wedIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="76dp"
+        android:text="Monday"
+        android:textColor="#121111"
+        app:layout_constraintBottom_toTopOf="@+id/tvTues"
+        app:layout_constraintEnd_toStartOf="@+id/mondayIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/monTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="66dp"
+        android:text="12 / 25"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/tuesTemp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/mondayIcon"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintEnd_toStartOf="@+id/monTemp"
+        app:layout_constraintTop_toBottomOf="@+id/tv7"
+        app:srcCompat="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/tuesIcon"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/tuesTemp"
+        app:layout_constraintTop_toBottomOf="@+id/mondayIcon"
+        app:srcCompat="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/wedIcon"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/wedTemp"
+        app:layout_constraintTop_toBottomOf="@+id/tuesIcon"
+        app:srcCompat="@drawable/part_cloud" />
+
+    <ImageView
+        android:id="@+id/thursIcon"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/thursTemp"
+        app:layout_constraintTop_toBottomOf="@+id/wedIcon"
+        app:srcCompat="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/friIcon"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toStartOf="@+id/friTemp"
+        app:layout_constraintTop_toBottomOf="@+id/thursIcon"
+        app:srcCompat="@drawable/part_cloud" />
+
+    <ImageView
+        android:id="@+id/satIcon"
+        android:layout_width="63dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/satTemp"
+        app:layout_constraintTop_toBottomOf="@+id/friIcon"
+        app:srcCompat="@drawable/raining" />
+
+    <ImageView
+        android:id="@+id/sunIcon"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/sunTemp"
+        app:layout_constraintTop_toBottomOf="@+id/satIcon"
+        app:srcCompat="@drawable/cloud" />
+
+    <TextView
+        android:id="@+id/wedTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="71dp"
+        android:text="14 / 27"
+        app:layout_constraintBottom_toTopOf="@+id/thursTemp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/sunTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="61dp"
+        android:text="10 / 16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sunIcon" />
+
+    <TextView
+        android:id="@+id/satTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="56dp"
+        android:text="10 / 18"
+        app:layout_constraintBottom_toTopOf="@+id/sunTemp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/thursTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="78dp"
+        android:text="16 / 28"
+        app:layout_constraintBottom_toTopOf="@+id/friTemp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tuesTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="66dp"
+        android:text="15 / 26"
+        android:textColor="#0E0E0E"
+        app:layout_constraintBottom_toTopOf="@+id/wedTemp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/friTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="76dp"
+        android:text="12 / 24"
+        app:layout_constraintBottom_toTopOf="@+id/satTemp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="28dp"
+        android:text="7 Day - Forecast"
+        android:textColor="#151414"
+        app:layout_constraintBottom_toTopOf="@+id/mondayIcon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnExit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="27dp"
+        android:background="#00785A5A"
+        android:text="Back"
+        android:textColor="#131313"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sunTemp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
